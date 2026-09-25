@@ -1,0 +1,262 @@
+{
+  "tool": {
+    "id": "escala-lanss",
+    "title": "Escala de dor LANSS",
+    "short": "Rastreamento de dor neuropática",
+    "spec": [
+      "neurologia",
+      "anestesiologia",
+      "acupuntura",
+      "medicina-fisica-e-reabilitacao"
+    ],
+    "desc": "Escala LANSS (Leeds): identifica dor de mecanismo predominantemente neuropático com 5 perguntas e 2 testes à beira do leito; 12 pontos ou mais é positivo.",
+    "lead": "Ajuda a identificar quando uma dor crônica tem mecanismo predominantemente neuropático, com cinco perguntas sobre a dor e dois testes sensitivos simples.",
+    "fields": [
+      [
+        "a1",
+        "A dor parece uma sensação estranha e desagradável na pele (agulhadas, formigamento, choques)?",
+        "chk",
+        {
+          "pts": 5
+        }
+      ],
+      [
+        "a2",
+        "A dor faz a pele da área dolorosa ficar diferente do normal (manchada, avermelhada ou rosada)?",
+        "chk",
+        {
+          "pts": 5
+        }
+      ],
+      [
+        "a3",
+        "A dor deixa a pele anormalmente sensível ao toque (desconforto ao roçar de leve ou com roupa apertada)?",
+        "chk",
+        {
+          "pts": 3
+        }
+      ],
+      [
+        "a4",
+        "A dor aparece de repente, em crises, sem motivo aparente, estando parado (choques elétricos, pontadas)?",
+        "chk",
+        {
+          "pts": 2
+        }
+      ],
+      [
+        "a5",
+        "A dor dá a sensação de que a temperatura da pele mudou (calor, queimação)?",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "b6",
+        "Exame: <strong>alodinia</strong> (dor ou desconforto ao roçar algodão na área dolorosa, comparada com área normal)",
+        "chk",
+        {
+          "pts": 5
+        }
+      ],
+      [
+        "b7",
+        "Exame: <strong>limiar alterado à agulha</strong> (picada com agulha 23G percebida diferente na área dolorosa: mais ou menos intensa)",
+        "chk",
+        {
+          "pts": 3
+        }
+      ]
+    ],
+    "score": {
+      "label": "LANSS",
+      "unit": "de 24",
+      "bands": [
+        [
+          0,
+          "low",
+          "Mecanismo neuropático improvável (&lt; 12 pontos)",
+          "A dor provavelmente é nociceptiva; reavalie se o quadro mudar."
+        ],
+        [
+          12,
+          "high",
+          "Provável dor de mecanismo neuropático (≥ 12 pontos)",
+          "Considere tratamento dirigido à dor neuropática e investigue a lesão ou doença do sistema somatossensitivo."
+        ]
+      ]
+    },
+    "formula": "<p>Parte A (questionário): itens de 5, 5, 3, 2 e 1 ponto. Parte B (exame sensitivo): alodinia 5 pontos; limiar à picada alterado 3 pontos. Total: 0 a 24; ponto de corte ≥ 12.</p>",
+    "table": [
+      [
+        "Pontos",
+        "Interpretação"
+      ],
+      [
+        "&lt; 12",
+        "Mecanismo neuropático improvável"
+      ],
+      [
+        "≥ 12",
+        "Provável contribuição neuropática"
+      ]
+    ],
+    "table_note": "A versão brasileira (Schestatsky 2011) manteve o ponto de corte de 12 pontos.",
+    "tips": [
+      "A LANSS é rastreamento: não localiza a lesão nem substitui o exame neurológico. O diagnóstico de dor neuropática exige lesão ou doença do sistema somatossensitivo plausível e demonstrada.",
+      "Faça os testes da parte B sempre comparando com uma área contralateral ou adjacente <strong>não dolorosa</strong>.",
+      "Resultados falsamente negativos são mais comuns em neuropatias com perda sensitiva predominante (dor “negativa”, sem alodinia).",
+      "Na dor mista (ex.: lombociatalgia), um LANSS positivo ajuda a justificar associar gabapentinoides, antidepressivos duais ou tricíclicos ao tratamento nociceptivo."
+    ],
+    "sources": [
+      [
+        "Bennett M. The LANSS Pain Scale: the Leeds assessment of neuropathic symptoms and signs. Pain, 2001.",
+        "https://doi.org/10.1016/S0304-3959(00)00482-6"
+      ],
+      [
+        "Schestatsky P et al. Brazilian Portuguese validation of the Leeds Assessment of Neuropathic Symptoms and Signs for patients with chronic pain. Pain Med, 2011.",
+        "https://doi.org/10.1111/j.1526-4637.2011.01221.x"
+      ]
+    ],
+    "cases": [
+      [
+        "Sensibilidade ao toque e sensação de calor: 4 pontos (negativo)",
+        {
+          "a3": true,
+          "a5": true
+        },
+        {
+          "score": 4,
+          "level": "low"
+        }
+      ],
+      [
+        "Limite: sensação estranha, pele alterada e crises: 12 pontos (positivo)",
+        {
+          "a1": true,
+          "a2": true,
+          "a4": true
+        },
+        {
+          "score": 12,
+          "level": "high"
+        }
+      ],
+      [
+        "Agulhadas, hipersensibilidade e alodinia: 13 pontos",
+        {
+          "a1": true,
+          "a3": true,
+          "b6": true
+        },
+        {
+          "score": 13,
+          "level": "high"
+        }
+      ],
+      [
+        "Todos os itens: 24 pontos",
+        {
+          "a1": true,
+          "a2": true,
+          "a3": true,
+          "a4": true,
+          "a5": true,
+          "b6": true,
+          "b7": true
+        },
+        {
+          "score": 24,
+          "level": "high"
+        }
+      ]
+    ],
+    "batch": "neuro-mente",
+    "kind": "Escore",
+    "config": {
+      "unit": "de 24",
+      "label": "LANSS",
+      "fields": [
+        [
+          "a1",
+          "chk",
+          5
+        ],
+        [
+          "a2",
+          "chk",
+          5
+        ],
+        [
+          "a3",
+          "chk",
+          3
+        ],
+        [
+          "a4",
+          "chk",
+          2
+        ],
+        [
+          "a5",
+          "chk",
+          1
+        ],
+        [
+          "b6",
+          "chk",
+          5
+        ],
+        [
+          "b7",
+          "chk",
+          3
+        ]
+      ],
+      "bands": [
+        [
+          0,
+          "low",
+          "Mecanismo neuropático improvável (&lt; 12 pontos)",
+          "A dor provavelmente é nociceptiva; reavalie se o quadro mudar."
+        ],
+        [
+          12,
+          "high",
+          "Provável dor de mecanismo neuropático (≥ 12 pontos)",
+          "Considere tratamento dirigido à dor neuropática e investigue a lesão ou doença do sistema somatossensitivo."
+        ]
+      ]
+    },
+    "areaId": "neuro-mente",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/neuro-mente.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 4,
+      "passed": 4,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/neuro-mente.php",
+    "sha256": "3ce3a7987a3ec63938e5f21d8d24ec7f7f8880c1b54458ef7046807a89221cac",
+    "bytes": 102818
+  },
+  "clinicalValidation": "not-performed"
+}

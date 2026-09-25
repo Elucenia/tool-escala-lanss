@@ -1,0 +1,80 @@
+[
+  {
+    "label": "Sensibilidade ao toque e sensação de calor: 4 pontos (negativo)",
+    "input": {
+      "a3": true,
+      "a5": true
+    },
+    "expected": {
+      "score": 4,
+      "level": "low"
+    },
+    "originalInput": {
+      "a3": true,
+      "a5": true
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Limite: sensação estranha, pele alterada e crises: 12 pontos (positivo)",
+    "input": {
+      "a1": true,
+      "a2": true,
+      "a4": true
+    },
+    "expected": {
+      "score": 12,
+      "level": "high"
+    },
+    "originalInput": {
+      "a1": true,
+      "a2": true,
+      "a4": true
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Agulhadas, hipersensibilidade e alodinia: 13 pontos",
+    "input": {
+      "a1": true,
+      "a3": true,
+      "b6": true
+    },
+    "expected": {
+      "score": 13,
+      "level": "high"
+    },
+    "originalInput": {
+      "a1": true,
+      "a3": true,
+      "b6": true
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Todos os itens: 24 pontos",
+    "input": {
+      "a1": true,
+      "a2": true,
+      "a3": true,
+      "a4": true,
+      "a5": true,
+      "b6": true,
+      "b7": true
+    },
+    "expected": {
+      "score": 24,
+      "level": "high"
+    },
+    "originalInput": {
+      "a1": true,
+      "a2": true,
+      "a3": true,
+      "a4": true,
+      "a5": true,
+      "b6": true,
+      "b7": true
+    },
+    "expandedZeroOptions": []
+  }
+]
