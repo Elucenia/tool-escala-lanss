@@ -1,9 +1,11 @@
-/* ELUCENIA standalone integration. Source package metadata and rights: README.md. */
+/* tool-escala-lanss · Elucenia · https://github.com/Elucenia/tool-escala-lanss
+   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+   Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"escala-lanss","title":"Escala de dor LANSS","fields":[["a1","A dor parece uma sensação estranha e desagradável na pele (agulhadas, formigamento, choques)?","chk",{"pts":5}],["a2","A dor faz a pele da área dolorosa ficar diferente do normal (manchada, avermelhada ou rosada)?","chk",{"pts":5}],["a3","A dor deixa a pele anormalmente sensível ao toque (desconforto ao roçar de leve ou com roupa apertada)?","chk",{"pts":3}],["a4","A dor aparece de repente, em crises, sem motivo aparente, estando parado (choques elétricos, pontadas)?","chk",{"pts":2}],["a5","A dor dá a sensação de que a temperatura da pele mudou (calor, queimação)?","chk",{"pts":1}],["b6","Exame: <strong>alodinia</strong> (dor ou desconforto ao roçar algodão na área dolorosa, comparada com área normal)","chk",{"pts":5}],["b7","Exame: <strong>limiar alterado à agulha</strong> (picada com agulha 23G percebida diferente na área dolorosa: mais ou menos intensa)","chk",{"pts":3}]],"config":{"unit":"de 24","label":"LANSS","fields":[["a1","chk",5],["a2","chk",5],["a3","chk",3],["a4","chk",2],["a5","chk",1],["b6","chk",5],["b7","chk",3]],"bands":[[0,"low","Mecanismo neuropático improvável (&lt; 12 pontos)","A dor provavelmente é nociceptiva; reavalie se o quadro mudar."],[12,"high","Provável dor de mecanismo neuropático (≥ 12 pontos)","Considere tratamento dirigido à dor neuropática e investigue a lesão ou doença do sistema somatossensitivo."]]},"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
