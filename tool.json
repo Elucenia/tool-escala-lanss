@@ -3,112 +3,60 @@
     "id": "escala-lanss",
     "title": "Escala de dor LANSS",
     "short": "Rastreamento de dor neuropática",
+    "desc": "Escala LANSS (Leeds): identifica dor de mecanismo predominantemente neuropático com 5 perguntas e 2 testes à beira do leito; 12 pontos ou mais é positivo.",
+    "lead": "Ajuda a identificar quando uma dor crônica tem mecanismo predominantemente neuropático, com cinco perguntas sobre a dor e dois testes sensitivos simples.",
+    "kind": "Escore",
     "spec": [
       "neurologia",
       "anestesiologia",
       "acupuntura",
       "medicina-fisica-e-reabilitacao"
     ],
-    "desc": "Escala LANSS (Leeds): identifica dor de mecanismo predominantemente neuropático com 5 perguntas e 2 testes à beira do leito; 12 pontos ou mais é positivo.",
-    "lead": "Ajuda a identificar quando uma dor crônica tem mecanismo predominantemente neuropático, com cinco perguntas sobre a dor e dois testes sensitivos simples.",
     "fields": [
       [
         "a1",
         "A dor parece uma sensação estranha e desagradável na pele (agulhadas, formigamento, choques)?",
         "chk",
-        {
-          "pts": 5
-        }
+        {}
       ],
       [
         "a2",
         "A dor faz a pele da área dolorosa ficar diferente do normal (manchada, avermelhada ou rosada)?",
         "chk",
-        {
-          "pts": 5
-        }
+        {}
       ],
       [
         "a3",
         "A dor deixa a pele anormalmente sensível ao toque (desconforto ao roçar de leve ou com roupa apertada)?",
         "chk",
-        {
-          "pts": 3
-        }
+        {}
       ],
       [
         "a4",
         "A dor aparece de repente, em crises, sem motivo aparente, estando parado (choques elétricos, pontadas)?",
         "chk",
-        {
-          "pts": 2
-        }
+        {}
       ],
       [
         "a5",
         "A dor dá a sensação de que a temperatura da pele mudou (calor, queimação)?",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "b6",
         "Exame: <strong>alodinia</strong> (dor ou desconforto ao roçar algodão na área dolorosa, comparada com área normal)",
         "chk",
-        {
-          "pts": 5
-        }
+        {}
       ],
       [
         "b7",
         "Exame: <strong>limiar alterado à agulha</strong> (picada com agulha 23G percebida diferente na área dolorosa: mais ou menos intensa)",
         "chk",
-        {
-          "pts": 3
-        }
+        {}
       ]
     ],
-    "score": {
-      "label": "LANSS",
-      "unit": "de 24",
-      "bands": [
-        [
-          0,
-          "low",
-          "Mecanismo neuropático improvável (&lt; 12 pontos)",
-          "A dor provavelmente é nociceptiva; reavalie se o quadro mudar."
-        ],
-        [
-          12,
-          "high",
-          "Provável dor de mecanismo neuropático (≥ 12 pontos)",
-          "Considere tratamento dirigido à dor neuropática e investigue a lesão ou doença do sistema somatossensitivo."
-        ]
-      ]
-    },
     "formula": "<p>Parte A (questionário): itens de 5, 5, 3, 2 e 1 ponto. Parte B (exame sensitivo): alodinia 5 pontos; limiar à picada alterado 3 pontos. Total: 0 a 24; ponto de corte ≥ 12.</p>",
-    "table": [
-      [
-        "Pontos",
-        "Interpretação"
-      ],
-      [
-        "&lt; 12",
-        "Mecanismo neuropático improvável"
-      ],
-      [
-        "≥ 12",
-        "Provável contribuição neuropática"
-      ]
-    ],
-    "table_note": "A versão brasileira (Schestatsky 2011) manteve o ponto de corte de 12 pontos.",
-    "tips": [
-      "A LANSS é rastreamento: não localiza a lesão nem substitui o exame neurológico. O diagnóstico de dor neuropática exige lesão ou doença do sistema somatossensitivo plausível e demonstrada.",
-      "Faça os testes da parte B sempre comparando com uma área contralateral ou adjacente <strong>não dolorosa</strong>.",
-      "Resultados falsamente negativos são mais comuns em neuropatias com perda sensitiva predominante (dor “negativa”, sem alodinia).",
-      "Na dor mista (ex.: lombociatalgia), um LANSS positivo ajuda a justificar associar gabapentinoides, antidepressivos duais ou tricíclicos ao tratamento nociceptivo."
-    ],
     "sources": [
       [
         "Bennett M. The LANSS Pain Scale: the Leeds assessment of neuropathic symptoms and signs. Pain, 2001.",
@@ -172,63 +120,6 @@
         }
       ]
     ],
-    "kind": "Escore",
-    "config": {
-      "unit": "de 24",
-      "label": "LANSS",
-      "fields": [
-        [
-          "a1",
-          "chk",
-          5
-        ],
-        [
-          "a2",
-          "chk",
-          5
-        ],
-        [
-          "a3",
-          "chk",
-          3
-        ],
-        [
-          "a4",
-          "chk",
-          2
-        ],
-        [
-          "a5",
-          "chk",
-          1
-        ],
-        [
-          "b6",
-          "chk",
-          5
-        ],
-        [
-          "b7",
-          "chk",
-          3
-        ]
-      ],
-      "bands": [
-        [
-          0,
-          "low",
-          "Mecanismo neuropático improvável (&lt; 12 pontos)",
-          "A dor provavelmente é nociceptiva; reavalie se o quadro mudar."
-        ],
-        [
-          12,
-          "high",
-          "Provável dor de mecanismo neuropático (≥ 12 pontos)",
-          "Considere tratamento dirigido à dor neuropática e investigue a lesão ou doença do sistema somatossensitivo."
-        ]
-      ]
-    },
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -237,17 +128,408 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T20:02:43.380Z",
+      "total": 128,
+      "passed": 128,
+      "sourceRowCount": 128,
+      "uniqueApiInputCount": 128,
+      "sourceContextCount": 128,
+      "embeddedCasesAreSubset": true,
+      "embeddedCaseCount": 4,
+      "caseStorage": {
+        "mode": "complete-downloadable-bank-with-inline-subset",
+        "file": "independent-source-cases.json",
+        "sha256": "9d562c5d2f500e11636ba69e627a7754d449b7a48a8981bb3b892dc65c4da79f",
+        "total": 128,
+        "bankRowCount": 128,
+        "uniqueApiInputCount": 128,
+        "sourceContextCount": 128,
+        "expectedEvidence": [
+          {
+            "file": "reports/review-20261003/six-screening-independent-expectations-final28.json",
+            "sha256": "2cbc1f414248ca8b232eca6ddb7843779fa1b3723758d27a7f29a3dd4c947b97"
+          },
+          {
+            "file": "reports/review-20261003/six-screening-primary-source-review-final28-v2.json",
+            "sha256": "2aa00562adf4ec500ce3367132a9ef92a84d610bfd6a7d68671b2bd1dad4f9e3"
+          }
+        ],
+        "obtainedEvidence": {
+          "file": "reports/review-20261003/six-screening-independent-source-check-final28.json",
+          "sha256": "9aabf1baacf8aa7df35309a42f2d7e06ec39d67c63fc827ec17f5c5785f1dc89"
+        },
+        "packagingRequirement": "Complete downloadable expected/obtained bank; copy the file byte-exactly into each package. New formula prose/field/source revisions compose under separate ownership."
+      },
+      "inputIdentity": {
+        "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+        "sourceRows": 128,
+        "uniqueApiInputs": 128,
+        "duplicateRows": 0,
+        "expectedTupleSha256": "cf6337f6696c9041a98951d827cc718a39de547e13abf023caf0a1641bb22cad"
+      },
+      "scope": "Previously selected source integer point total only: Exhaustive2^7=128 selected-code combinations; numericpointsum only.",
+      "sources": [
+        {
+          "id": "escala-lanss",
+          "edition": "Bennett2001 LANSS original interviewer questionnaire+sensory examination, not S-LANSS",
+          "primaryReads": [
+            {
+              "url": "https://www.researchgate.net/publication/12013304_The_LANSS_pain_scale_The_Leeds_Assessment_of_Neuropathic_Symptoms_and_Signs",
+              "access": "OriginalPain92(2001)147–157 full article text uploaded by named author MichaelI.Bennett; targetedSections2.2.2 and3.1.1/printed149–150 read",
+              "readScope": "Five symptom groups and two examination items; seven weights explicitly stated; score24 and source cohort selection; AppendixA images were not decoded/read"
+            }
+          ],
+          "constants": {
+            "keys": [
+              "a1",
+              "a2",
+              "a3",
+              "a4",
+              "a5",
+              "b6",
+              "b7"
+            ],
+            "weights": [
+              5,
+              5,
+              3,
+              2,
+              1,
+              5,
+              3
+            ],
+            "maximum": 24
+          },
+          "limitations": [
+            "Selected point arithmetic only; clinical thresholds, diagnosis, referral, treatment, language validation and instrument reproduction rights are not certified.",
+            "Question wording and every population/edition are not established equivalent by a sum-of-codes test. Source metadata access is distinguished from actual targeted table/scoring reads.",
+            "Original chronic pain cohorts excluded mixed/uncertain classifications; clinicalcut≥12 and bedside sign validity are not certified by numeric enumeration. Author-upload article declares IASP/Elsevier2001 all rights reserved; no rights adjudication."
+          ]
+        }
+      ],
+      "evidencePath": "reports/review-20261003/six-screening-independent-source-check-final28.json",
+      "evidenceSha256": "9aabf1baacf8aa7df35309a42f2d7e06ec39d67c63fc827ec17f5c5785f1dc89",
+      "independentPeer": {
+        "status": "passed-scoped-numeric",
+        "evidence": {
+          "file": "reports/review-20261003/six-screening-independent-peer-verify-final28.json",
+          "sha256": "f44cf7582617795c9cbb3daf2883b2846546a4249579e9c63b9d0c9d5e3b339c"
+        },
+        "scope": "Independent own frozen expectations plus reauthored original45368 vectors; three-source Node and actual isolatedChromium totals only."
+      },
+      "freshAdapterExecutions": 384,
+      "freshVmExecutions": 384,
+      "actualBrowserEvidenceScope": "Original source28 actual isolated Chromium 128×3 unchanged adapter captures retained in the bank; not a served page/UI proof.",
+      "implementations": [
+        {
+          "file": "apps/website/private/tool-code/escala-lanss/calculator.js",
+          "app": "website",
+          "sha256": "33617bea0a113bf98d606f949e7e381cf6cbfa75c1de40c1a7d2001fcc3fff5d"
+        },
+        {
+          "file": "apps/dashboard/private/tool-code/escala-lanss/calculator.js",
+          "app": "dashboard",
+          "sha256": "33617bea0a113bf98d606f949e7e381cf6cbfa75c1de40c1a7d2001fcc3fff5d"
+        },
+        {
+          "file": "apps/command-center/private/tool-code/escala-lanss/calculator.js",
+          "app": "command-center",
+          "sha256": "33617bea0a113bf98d606f949e7e381cf6cbfa75c1de40c1a7d2001fcc3fff5d"
+        }
+      ],
+      "qualifications": [
+        "Selected point arithmetic only; clinical thresholds, diagnosis, referral, treatment, language validation and instrument reproduction rights are not certified.",
+        "Question wording and every population/edition are not established equivalent by a sum-of-codes test. Source metadata access is distinguished from actual targeted table/scoring reads.",
+        "Original chronic pain cohorts excluded mixed/uncertain classifications; clinicalcut≥12 and bedside sign validity are not certified by numeric enumeration. Author-upload article declares IASP/Elsevier2001 all rights reserved; no rights adjudication.",
+        "Only caller-selected raw.score integer total is projected into this bank. Original main display, source response-position witnesses and item10 numeric component remain in the untouched donor report; no clinical level, note/verdict, self-harm alarm, diagnosis, treatment or instrument-rubric equivalence is approved.",
+        "All cases and all projected expected/obtained totals are present. Numerical observation arrays are indexed by the exact original case index; mirror/runtime executions do not multiply case or unique-input counts.",
+        "Source access is limited to the precisely recorded original/direct/indexed sections. Existence of an edition or source hyperlink does not mean the entire original paper or questionnaire was read.",
+        "EPDS ordering prose is independently owned by the nine-target clarification candidate; future catalog/resolver merges must preserve those fields rather than replace whole snapshots.",
+        "Fresh compiled/source/package/browser bindings are still required. Clinical validation, official/professional language review, source rights and full-method conformance remain not-performed."
+      ],
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed",
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "LANSS/Bennett 2001:5 sintomas+2 sinais, total 0–24, corte≥12; PTSchestatsky 2011",
+    "implementationVersion": "escala-lanss@native-2026-10-03+33617bea0a11",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/11323136/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "Parte A (questionário): itens de 5, 5, 3, 2 e 1 ponto. Parte B (exame sensitivo): alodinia 5 pontos; limiar à picada alterado 3 pontos. Total: 0 a 24; ponto de corte ≥ 12.",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "a1",
+            "label": "A dor parece uma sensação estranha e desagradável na pele (agulhadas, formigamento, choques)?",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "a2",
+            "label": "A dor faz a pele da área dolorosa ficar diferente do normal (manchada, avermelhada ou rosada)?",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "a3",
+            "label": "A dor deixa a pele anormalmente sensível ao toque (desconforto ao roçar de leve ou com roupa apertada)?",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "a4",
+            "label": "A dor aparece de repente, em crises, sem motivo aparente, estando parado (choques elétricos, pontadas)?",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "a5",
+            "label": "A dor dá a sensação de que a temperatura da pele mudou (calor, queimação)?",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "b6",
+            "label": "Exame: <strong>alodinia</strong> (dor ou desconforto ao roçar algodão na área dolorosa, comparada com área normal)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "b7",
+            "label": "Exame: <strong>limiar alterado à agulha</strong> (picada com agulha 23G percebida diferente na área dolorosa: mais ou menos intensa)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          }
+        ],
+        "hash": "ce0ac068213e34e7c9157dddc464a2b69a4768b91b6acaaedac4d21580f0e3b5"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Bennett M. The LANSS Pain Scale: the Leeds assessment of neuropathic symptoms and signs. Pain, 2001.",
+          "url": "https://doi.org/10.1016/S0304-3959(00)00482-6",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "The LANSS Pain Scale: the Leeds assessment of neuropathic symptoms and signs.",
+            "year": "2001",
+            "firstPublicationDate": "2001-05-01",
+            "doi": "10.1016/s0304-3959(00)00482-6",
+            "pmid": "11323136",
+            "journal": "Pain",
+            "authors": "Bennett M."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/11323136/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "a04a6eddc34a2657e0a6dacd9a6704f9dde7a7ecfd9de5b206136736c5cf2adc",
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Schestatsky P et al. Brazilian Portuguese validation of the Leeds Assessment of Neuropathic Symptoms and Signs for patients with chronic pain. Pain Med, 2011.",
+          "url": "https://doi.org/10.1111/j.1526-4637.2011.01221.x",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Brazilian Portuguese validation of the Leeds Assessment of Neuropathic Symptoms and Signs for patients with chronic pain.",
+            "year": "2011",
+            "firstPublicationDate": "2011-08-30",
+            "doi": "10.1111/j.1526-4637.2011.01221.x",
+            "pmid": "21883875",
+            "journal": "Pain medicine (Malden, Mass.)",
+            "authors": "Schestatsky P, Félix-Torres V, Chaves ML, Câmara-Ehlers B, Mucenic T, Caumo W, Nascimento O, Bennett MI."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/21883875/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "5d27f2c92058d3d72689637904f23f561e44505eaaf15f9295ca91397318d55c",
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T20:02:43.380Z",
+        "total": 128,
+        "passed": 128,
+        "sourceRowCount": 128,
+        "uniqueApiInputCount": 128,
+        "sourceContextCount": 128,
+        "embeddedCasesAreSubset": true,
+        "embeddedCaseCount": 4,
+        "caseStorage": {
+          "mode": "complete-downloadable-bank-with-inline-subset",
+          "file": "independent-source-cases.json",
+          "sha256": "9d562c5d2f500e11636ba69e627a7754d449b7a48a8981bb3b892dc65c4da79f",
+          "total": 128,
+          "bankRowCount": 128,
+          "uniqueApiInputCount": 128,
+          "sourceContextCount": 128,
+          "expectedEvidence": [
+            {
+              "file": "reports/review-20261003/six-screening-independent-expectations-final28.json",
+              "sha256": "2cbc1f414248ca8b232eca6ddb7843779fa1b3723758d27a7f29a3dd4c947b97"
+            },
+            {
+              "file": "reports/review-20261003/six-screening-primary-source-review-final28-v2.json",
+              "sha256": "2aa00562adf4ec500ce3367132a9ef92a84d610bfd6a7d68671b2bd1dad4f9e3"
+            }
+          ],
+          "obtainedEvidence": {
+            "file": "reports/review-20261003/six-screening-independent-source-check-final28.json",
+            "sha256": "9aabf1baacf8aa7df35309a42f2d7e06ec39d67c63fc827ec17f5c5785f1dc89"
+          },
+          "packagingRequirement": "Complete downloadable expected/obtained bank; copy the file byte-exactly into each package. New formula prose/field/source revisions compose under separate ownership."
+        },
+        "inputIdentity": {
+          "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+          "sourceRows": 128,
+          "uniqueApiInputs": 128,
+          "duplicateRows": 0,
+          "expectedTupleSha256": "cf6337f6696c9041a98951d827cc718a39de547e13abf023caf0a1641bb22cad"
+        },
+        "scope": "Previously selected source integer point total only: Exhaustive2^7=128 selected-code combinations; numericpointsum only.",
+        "sources": [
+          {
+            "id": "escala-lanss",
+            "edition": "Bennett2001 LANSS original interviewer questionnaire+sensory examination, not S-LANSS",
+            "primaryReads": [
+              {
+                "url": "https://www.researchgate.net/publication/12013304_The_LANSS_pain_scale_The_Leeds_Assessment_of_Neuropathic_Symptoms_and_Signs",
+                "access": "OriginalPain92(2001)147–157 full article text uploaded by named author MichaelI.Bennett; targetedSections2.2.2 and3.1.1/printed149–150 read",
+                "readScope": "Five symptom groups and two examination items; seven weights explicitly stated; score24 and source cohort selection; AppendixA images were not decoded/read"
+              }
+            ],
+            "constants": {
+              "keys": [
+                "a1",
+                "a2",
+                "a3",
+                "a4",
+                "a5",
+                "b6",
+                "b7"
+              ],
+              "weights": [
+                5,
+                5,
+                3,
+                2,
+                1,
+                5,
+                3
+              ],
+              "maximum": 24
+            },
+            "limitations": [
+              "Selected point arithmetic only; clinical thresholds, diagnosis, referral, treatment, language validation and instrument reproduction rights are not certified.",
+              "Question wording and every population/edition are not established equivalent by a sum-of-codes test. Source metadata access is distinguished from actual targeted table/scoring reads.",
+              "Original chronic pain cohorts excluded mixed/uncertain classifications; clinicalcut≥12 and bedside sign validity are not certified by numeric enumeration. Author-upload article declares IASP/Elsevier2001 all rights reserved; no rights adjudication."
+            ]
+          }
+        ],
+        "evidencePath": "reports/review-20261003/six-screening-independent-source-check-final28.json",
+        "evidenceSha256": "9aabf1baacf8aa7df35309a42f2d7e06ec39d67c63fc827ec17f5c5785f1dc89",
+        "independentPeer": {
+          "status": "passed-scoped-numeric",
+          "evidence": {
+            "file": "reports/review-20261003/six-screening-independent-peer-verify-final28.json",
+            "sha256": "f44cf7582617795c9cbb3daf2883b2846546a4249579e9c63b9d0c9d5e3b339c"
+          },
+          "scope": "Independent own frozen expectations plus reauthored original45368 vectors; three-source Node and actual isolatedChromium totals only."
+        },
+        "freshAdapterExecutions": 384,
+        "freshVmExecutions": 384,
+        "actualBrowserEvidenceScope": "Original source28 actual isolated Chromium 128×3 unchanged adapter captures retained in the bank; not a served page/UI proof.",
+        "implementations": [
+          {
+            "file": "apps/website/private/tool-code/escala-lanss/calculator.js",
+            "app": "website",
+            "sha256": "33617bea0a113bf98d606f949e7e381cf6cbfa75c1de40c1a7d2001fcc3fff5d"
+          },
+          {
+            "file": "apps/dashboard/private/tool-code/escala-lanss/calculator.js",
+            "app": "dashboard",
+            "sha256": "33617bea0a113bf98d606f949e7e381cf6cbfa75c1de40c1a7d2001fcc3fff5d"
+          },
+          {
+            "file": "apps/command-center/private/tool-code/escala-lanss/calculator.js",
+            "app": "command-center",
+            "sha256": "33617bea0a113bf98d606f949e7e381cf6cbfa75c1de40c1a7d2001fcc3fff5d"
+          }
+        ],
+        "qualifications": [
+          "Selected point arithmetic only; clinical thresholds, diagnosis, referral, treatment, language validation and instrument reproduction rights are not certified.",
+          "Question wording and every population/edition are not established equivalent by a sum-of-codes test. Source metadata access is distinguished from actual targeted table/scoring reads.",
+          "Original chronic pain cohorts excluded mixed/uncertain classifications; clinicalcut≥12 and bedside sign validity are not certified by numeric enumeration. Author-upload article declares IASP/Elsevier2001 all rights reserved; no rights adjudication.",
+          "Only caller-selected raw.score integer total is projected into this bank. Original main display, source response-position witnesses and item10 numeric component remain in the untouched donor report; no clinical level, note/verdict, self-harm alarm, diagnosis, treatment or instrument-rubric equivalence is approved.",
+          "All cases and all projected expected/obtained totals are present. Numerical observation arrays are indexed by the exact original case index; mirror/runtime executions do not multiply case or unique-input counts.",
+          "Source access is limited to the precisely recorded original/direct/indexed sections. Existence of an edition or source hyperlink does not mean the entire original paper or questionnaire was read.",
+          "EPDS ordering prose is independently owned by the nine-target clarification candidate; future catalog/resolver merges must preserve those fields rather than replace whole snapshots.",
+          "Fresh compiled/source/package/browser bindings are still required. Clinical validation, official/professional language review, source rights and full-method conformance remain not-performed."
+        ],
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed",
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "33617bea0a113bf98d606f949e7e381cf6cbfa75c1de40c1a7d2001fcc3fff5d"
+    },
+    "limits": "A LANSS combina sintomas com sinais obtidos por exame sensitivo para investigar predomínio de mecanismo neuropático em dor crônica. Os itens de exame não devem ser tratados como simples autorrelato. A validação brasileira citada não certifica a implementação nem novas traduções.",
+    "sourceLimitEvidence": {
+      "checkedAt": "2026-10-04T02:52:02.850Z",
+      "scope": "Targeted source reading and authorial documentation, not full method or clinical approval.",
+      "sourceReviewFile": "remaining-native-population-limits-review.json",
+      "sourceReviewSha256": "ba61a9b120a338c518c34ba9f324558b12580e7f5371ea81304b030b45ea44a5",
+      "readingOutcome": "review-outcome-recorded",
+      "unresolved": [
+        "Pesos e limiar ≥ 12 não foram conferidos na tabela original pelo resumo."
+      ],
+      "fullMethodConformanceReviewed": false,
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/escala-lanss/calculator.js",
+    "bytes": 5425,
+    "sha256": "33617bea0a113bf98d606f949e7e381cf6cbfa75c1de40c1a7d2001fcc3fff5d"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "7e75812f58eaba5970da41db4a06c8c4e49ddcfb6ab1e969f61360d729708b2d",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 4,
+      "sha256": "51d39495afc5ade99ed63ed1d7c9ee213392a08025fa923554200fe47c6bef41",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    },
+    {
+      "rows": 4,
+      "sha256": "51d39495afc5ade99ed63ed1d7c9ee213392a08025fa923554200fe47c6bef41",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }

@@ -1,58 +1,143 @@
 [
   {
-    "label": "Sensibilidade ao toque e sensação de calor: 4 pontos (negativo)",
-    "input": {
+    "id": "escala-lanss",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "Sensibilidade ao toque e sensação de calor: 4 pontos (negativo)",
+    "originalInput": {
       "a3": true,
       "a5": true
+    },
+    "input": {
+      "a3": true,
+      "a5": true,
+      "a1": false,
+      "a2": false,
+      "a4": false,
+      "b6": false,
+      "b7": false
     },
     "expected": {
       "score": 4,
       "level": "low"
     },
-    "originalInput": {
-      "a3": true,
-      "a5": true
+    "recordedResult": {
+      "main": [
+        "4",
+        "de 24"
+      ],
+      "label": "LANSS",
+      "raw": {
+        "score": 4
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Limite: sensação estranha, pele alterada e crises: 12 pontos (positivo)",
-    "input": {
+    "id": "escala-lanss",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "Limite: sensação estranha, pele alterada e crises: 12 pontos (positivo)",
+    "originalInput": {
       "a1": true,
       "a2": true,
       "a4": true
+    },
+    "input": {
+      "a1": true,
+      "a2": true,
+      "a4": true,
+      "a3": false,
+      "a5": false,
+      "b6": false,
+      "b7": false
     },
     "expected": {
       "score": 12,
       "level": "high"
     },
-    "originalInput": {
-      "a1": true,
-      "a2": true,
-      "a4": true
+    "recordedResult": {
+      "main": [
+        "12",
+        "de 24"
+      ],
+      "label": "LANSS",
+      "raw": {
+        "score": 12
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Agulhadas, hipersensibilidade e alodinia: 13 pontos",
-    "input": {
+    "id": "escala-lanss",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "Agulhadas, hipersensibilidade e alodinia: 13 pontos",
+    "originalInput": {
       "a1": true,
       "a3": true,
       "b6": true
+    },
+    "input": {
+      "a1": true,
+      "a3": true,
+      "b6": true,
+      "a2": false,
+      "a4": false,
+      "a5": false,
+      "b7": false
     },
     "expected": {
       "score": 13,
       "level": "high"
     },
-    "originalInput": {
-      "a1": true,
-      "a3": true,
-      "b6": true
+    "recordedResult": {
+      "main": [
+        "13",
+        "de 24"
+      ],
+      "label": "LANSS",
+      "raw": {
+        "score": 13
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Todos os itens: 24 pontos",
+    "id": "escala-lanss",
+    "kind": "native-source-reference",
+    "index": 3,
+    "name": "Todos os itens: 24 pontos",
+    "originalInput": {
+      "a1": true,
+      "a2": true,
+      "a3": true,
+      "a4": true,
+      "a5": true,
+      "b6": true,
+      "b7": true
+    },
     "input": {
       "a1": true,
       "a2": true,
@@ -66,15 +151,23 @@
       "score": 24,
       "level": "high"
     },
-    "originalInput": {
-      "a1": true,
-      "a2": true,
-      "a3": true,
-      "a4": true,
-      "a5": true,
-      "b6": true,
-      "b7": true
+    "recordedResult": {
+      "main": [
+        "24",
+        "de 24"
+      ],
+      "label": "LANSS",
+      "raw": {
+        "score": 24
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]

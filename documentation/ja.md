@@ -1,0 +1,83 @@
+<!-- ELUCENIA technical documentation · escala-lanss · ja · no clinical/professional/rights approval -->
+
+# LANSS疼痛スケール
+
+[条件・出典・許諾](https://elucenia.org/ja/tools/escala-lanss)
+
+## 使い方
+
+ポータルでツールを使用するか、ローカルHTTPサーバー経由でindex.htmlを開いてください。言語を選択し、項目を入力して計算してください。
+
+## 入力項目と単位
+
+### 痛みは皮膚の奇妙で不快な感覚（針刺し、しびれ、電撃）に似ていますか？
+
+`a1`
+
+### 痛みで患部の皮膚が通常と異なりますか（斑状、赤色、ピンク色）？
+
+`a2`
+
+### 痛みで皮膚が触れることに異常に敏感ですか（軽く触れる・きつい服で不快）？
+
+`a3`
+
+### 安静時に明らかな理由なく突然痛みが発作的に起こりますか（電撃、刺す痛み）？
+
+`a4`
+
+### 痛みで皮膚温度が変わったように感じますか（熱さ、灼熱感）？
+
+`a5`
+
+### 診察：アロディニア（正常部位と比べ、痛みのある部位を綿で軽く触れると疼痛・不快感）
+
+`b6`
+
+### 診察：針刺激閾値の変化（23G針の刺激が痛みのある部位で強く・弱く感じられる）
+
+`b7`
+
+## 方法の版
+
+LANSS/Bennett 2001：5症状+2徴候、合計0–24、基準≥12、ブラジルポルトガル語Schestatsky 2011
+
+## 記載された計算式
+
+A（質問票）：各項目5、5、3、2、1点。B（感覚検査）：アロディニア5点、ピン刺激閾値異常3点。合計0～24、カットオフ≥12。
+
+## 限界・対象集団
+
+LANSSは症状と感覚検査で得られる徴候を組み合わせ、慢性疼痛で神経障害性の機序が優位かを調べます。診察項目を単なる自己申告として扱ってはいけません。引用されたブラジルの妥当性研究は、実装や新しい翻訳を認証するものではありません。
+
+## 参考文献
+
+- [Bennett M. The LANSS Pain Scale: the Leeds assessment of neuropathic symptoms and signs. Pain, 2001.](https://doi.org/10.1016/S0304-3959(00)00482-6)
+
+- [Schestatsky P et al. Brazilian Portuguese validation of the Leeds Assessment of Neuropathic Symptoms and Signs for patients with chronic pain. Pain Med, 2011.](https://doi.org/10.1111/j.1526-4637.2011.01221.x)
+
+## 技術テストの再現
+
+このリポジトリのルートディレクトリでnode test.cjsを実行すると、記録された合成ケースを再実行できます。元の入力、期待結果、許容誤差は保持されています。技術テストは臨床的検証を意味しません。
+
+```sh
+node test.cjs
+```
+
+tool.jsonには出典、版、確認範囲が記録されています。examples.jsonには合成入力と期待結果が保持され、results.jsonには実際に得られた結果が記録されています。
+
+[記録・参考文献](../tool.json) · [JavaScriptコード](../calculator.js) · [参照ケース](../examples.json) · [results.json](../results.json)
+
+## 確認状況と使用条件
+
+独立した臨床レビューは実施されていません。
+
+このインターフェースは独自に作成した翻訳であり、公式版や認証済みの版ではありません。独立した臨床レビュー、専門家による言語レビュー、評価尺度等の権利許諾の確認は実施されていません。
+
+式または分類の結果です。解釈、対応、適用可能性は専門家による評価と選択した出典に依存します。
+
+## ライセンスと帰属表示
+
+Apache-2.0はELUCENIAのコードにのみ適用されます。評価尺度等、出版物、翻訳、データの権利は、それぞれの権利者に帰属します。LICENSEとNOTICEを保持してください。
+
+ELUCENIA · Felipe Guedes · Copyright © 2026

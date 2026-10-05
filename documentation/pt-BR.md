@@ -1,0 +1,83 @@
+<!-- ELUCENIA technical documentation · escala-lanss · pt-BR · no clinical/professional/rights approval -->
+
+# Escala de dor LANSS
+
+[condições, fontes e permissões](https://elucenia.org/pt-br/ferramentas/escala-lanss)
+
+## Como usar
+
+Use a ferramenta no portal ou abra index.html em um servidor HTTP local. Selecione o idioma, preencha os campos e calcule.
+
+## Entradas e unidades
+
+### A dor parece uma sensação estranha e desagradável na pele (agulhadas, formigamento, choques)?
+
+`a1`
+
+### A dor faz a pele da área dolorosa ficar diferente do normal (manchada, avermelhada ou rosada)?
+
+`a2`
+
+### A dor deixa a pele anormalmente sensível ao toque (desconforto ao roçar de leve ou com roupa apertada)?
+
+`a3`
+
+### A dor aparece de repente, em crises, sem motivo aparente, estando parado (choques elétricos, pontadas)?
+
+`a4`
+
+### A dor dá a sensação de que a temperatura da pele mudou (calor, queimação)?
+
+`a5`
+
+### Exame: alodinia (dor ou desconforto ao roçar algodão na área dolorosa, comparada com área normal)
+
+`b6`
+
+### Exame: limiar alterado à agulha (picada com agulha 23G percebida diferente na área dolorosa: mais ou menos intensa)
+
+`b7`
+
+## Edição do método
+
+LANSS/Bennett 2001:5 sintomas+2 sinais, total 0–24, corte≥12; PTSchestatsky 2011
+
+## Fórmula documentada
+
+Parte A (questionário): itens de 5, 5, 3, 2 e 1 ponto. Parte B (exame sensitivo): alodinia 5 pontos; limiar à picada alterado 3 pontos. Total: 0 a 24; ponto de corte ≥ 12.
+
+## Limites e população
+
+A LANSS combina sintomas com sinais obtidos por exame sensitivo para investigar predomínio de mecanismo neuropático em dor crônica. Os itens de exame não devem ser tratados como simples autorrelato. A validação brasileira citada não certifica a implementação nem novas traduções.
+
+## Referências
+
+- [Bennett M. The LANSS Pain Scale: the Leeds assessment of neuropathic symptoms and signs. Pain, 2001.](https://doi.org/10.1016/S0304-3959(00)00482-6)
+
+- [Schestatsky P et al. Brazilian Portuguese validation of the Leeds Assessment of Neuropathic Symptoms and Signs for patients with chronic pain. Pain Med, 2011.](https://doi.org/10.1111/j.1526-4637.2011.01221.x)
+
+## Reproduzir os testes técnicos
+
+Execute node test.cjs na pasta raiz deste repositório para repetir os casos sintéticos registrados. As entradas, expectativas e tolerâncias originais são preservadas. Testes técnicos não constituem validação clínica.
+
+```sh
+node test.cjs
+```
+
+tool.json contém fontes, edição e escopo de revisão. examples.json conserva as entradas e expectativas sintéticas; results.json registra os resultados obtidos.
+
+[Ficha e referências](../tool.json) · [Código JavaScript](../calculator.js) · [Casos de referência](../examples.json) · [results.json](../results.json)
+
+## Revisão e condições de uso
+
+Revisão clínica independente não realizada.
+
+Esta interface é uma tradução autoral, não uma edição oficial ou certificada. Revisão clínica independente, revisão linguística profissional e autorização de direitos de instrumentos não foram realizadas.
+
+Resultado da fórmula ou classificação. Interpretação, conduta e aplicabilidade dependem da avaliação profissional e da fonte selecionada.
+
+## Licença e atribuição
+
+Apache-2.0 aplica-se somente ao código da ELUCENIA. Os instrumentos, publicações, traduções e dados mantêm os direitos dos respectivos titulares. Preserve LICENSE e NOTICE.
+
+ELUCENIA · Felipe Guedes · Copyright © 2026
