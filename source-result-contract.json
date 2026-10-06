@@ -1,0 +1,236 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "escala-lanss",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "890e448db899007ba8c52f77d8b7e431a5cebb5c",
+    "oldEngineSha256": "33617bea0a113bf98d606f949e7e381cf6cbfa75c1de40c1a7d2001fcc3fff5d",
+    "currentEngineSha256": "b3fb6bef5d60d1257959e69e9a12c9424f7ee92dce0f08e93a7ee6ec39491d1a"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "Sensibilidade ao toque e sensação de calor: 4 pontos (negativo)",
+      "input": {
+        "a3": true,
+        "a5": true,
+        "a1": false,
+        "a2": false,
+        "a4": false,
+        "b6": false,
+        "b7": false
+      },
+      "publicOutput": {
+        "id": "escala-lanss",
+        "main": [
+          "4",
+          "de 24"
+        ],
+        "label": "LANSS",
+        "raw": {
+          "score": 4
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 4,
+        "level": "low"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "4",
+          "de 24"
+        ],
+        "label": "LANSS",
+        "level": "low",
+        "verdict": "Mecanismo neuropático improvável (&lt; 12 pontos)",
+        "note": "A dor provavelmente é nociceptiva; reavalie se o quadro mudar.",
+        "raw": {
+          "score": 4
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "Limite: sensação estranha, pele alterada e crises: 12 pontos (positivo)",
+      "input": {
+        "a1": true,
+        "a2": true,
+        "a4": true,
+        "a3": false,
+        "a5": false,
+        "b6": false,
+        "b7": false
+      },
+      "publicOutput": {
+        "id": "escala-lanss",
+        "main": [
+          "12",
+          "de 24"
+        ],
+        "label": "LANSS",
+        "raw": {
+          "score": 12
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 12,
+        "level": "high"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "12",
+          "de 24"
+        ],
+        "label": "LANSS",
+        "level": "high",
+        "verdict": "Provável dor de mecanismo neuropático (≥ 12 pontos)",
+        "note": "Considere tratamento dirigido à dor neuropática e investigue a lesão ou doença do sistema somatossensitivo.",
+        "raw": {
+          "score": 12
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "Agulhadas, hipersensibilidade e alodinia: 13 pontos",
+      "input": {
+        "a1": true,
+        "a3": true,
+        "b6": true,
+        "a2": false,
+        "a4": false,
+        "a5": false,
+        "b7": false
+      },
+      "publicOutput": {
+        "id": "escala-lanss",
+        "main": [
+          "13",
+          "de 24"
+        ],
+        "label": "LANSS",
+        "raw": {
+          "score": 13
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 13,
+        "level": "high"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "13",
+          "de 24"
+        ],
+        "label": "LANSS",
+        "level": "high",
+        "verdict": "Provável dor de mecanismo neuropático (≥ 12 pontos)",
+        "note": "Considere tratamento dirigido à dor neuropática e investigue a lesão ou doença do sistema somatossensitivo.",
+        "raw": {
+          "score": 13
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 3,
+      "name": "Todos os itens: 24 pontos",
+      "input": {
+        "a1": true,
+        "a2": true,
+        "a3": true,
+        "a4": true,
+        "a5": true,
+        "b6": true,
+        "b7": true
+      },
+      "publicOutput": {
+        "id": "escala-lanss",
+        "main": [
+          "24",
+          "de 24"
+        ],
+        "label": "LANSS",
+        "raw": {
+          "score": 24
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 24,
+        "level": "high"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "24",
+          "de 24"
+        ],
+        "label": "LANSS",
+        "level": "high",
+        "verdict": "Provável dor de mecanismo neuropático (≥ 12 pontos)",
+        "note": "Considere tratamento dirigido à dor neuropática e investigue a lesão ou doença do sistema somatossensitivo.",
+        "raw": {
+          "score": 24
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    }
+  ]
+}

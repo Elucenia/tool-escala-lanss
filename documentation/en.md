@@ -81,3 +81,35 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+Neuropathic mechanism unlikely (< 12 points)
+
+The pain is probably nociceptive; reassess if the condition changes.
+
+
+### 2
+
+Probable neuropathic pain mechanism (≥ 12 points)
+
+Consider targeted treatment for neuropathic pain and investigate injury or disease of the somatosensory system.
+
+
+### 3
+
+Probable neuropathic pain mechanism (≥ 12 points)
+
+Consider targeted treatment for neuropathic pain and investigate injury or disease of the somatosensory system.
+
+
+### 4
+
+Probable neuropathic pain mechanism (≥ 12 points)
+
+Consider targeted treatment for neuropathic pain and investigate injury or disease of the somatosensory system.
+

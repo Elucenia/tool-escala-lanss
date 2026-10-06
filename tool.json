@@ -255,7 +255,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "LANSS/Bennett 2001:5 sintomas+2 sinais, total 0–24, corte≥12; PTSchestatsky 2011",
-    "implementationVersion": "escala-lanss@native-2026-10-03+33617bea0a11",
+    "implementationVersion": "escala-lanss@native-2026-10-05+b3fb6bef5d60",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/11323136/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -494,7 +494,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "33617bea0a113bf98d606f949e7e381cf6cbfa75c1de40c1a7d2001fcc3fff5d"
+      "implementationHash": "b3fb6bef5d60d1257959e69e9a12c9424f7ee92dce0f08e93a7ee6ec39491d1a",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "escala-lanss@native-2026-10-03+33617bea0a11",
+          "previousImplementationHash": "33617bea0a113bf98d606f949e7e381cf6cbfa75c1de40c1a7d2001fcc3fff5d",
+          "implementationHash": "b3fb6bef5d60d1257959e69e9a12c9424f7ee92dce0f08e93a7ee6ec39491d1a",
+          "scientificBodySha256": "e85276683115c11c8a08c490b617391606f7137a1aaae50779ecc2e6796ea25d",
+          "metadataContractHash": "ce0ac068213e34e7c9157dddc464a2b69a4768b91b6acaaedac4d21580f0e3b5",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "A LANSS combina sintomas com sinais obtidos por exame sensitivo para investigar predomínio de mecanismo neuropático em dor crônica. Os itens de exame não devem ser tratados como simples autorrelato. A validação brasileira citada não certifica a implementação nem novas traduções.",
     "sourceLimitEvidence": {
@@ -513,20 +541,20 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/escala-lanss/calculator.js",
-    "bytes": 5425,
-    "sha256": "33617bea0a113bf98d606f949e7e381cf6cbfa75c1de40c1a7d2001fcc3fff5d"
+    "bytes": 5630,
+    "sha256": "b3fb6bef5d60d1257959e69e9a12c9424f7ee92dce0f08e93a7ee6ec39491d1a"
   },
-  "sourceToolSha256": "7e75812f58eaba5970da41db4a06c8c4e49ddcfb6ab1e969f61360d729708b2d",
+  "sourceToolSha256": "f39bd38c788a7cb4748e72a0e47a2384eb6a17636c861a4a427b1eade7758201",
   "omittedFullReferenceBanks": [
     {
       "rows": 4,
       "sha256": "51d39495afc5ade99ed63ed1d7c9ee213392a08025fa923554200fe47c6bef41",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
       "rows": 4,
       "sha256": "51d39495afc5ade99ed63ed1d7c9ee213392a08025fa923554200fe47c6bef41",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

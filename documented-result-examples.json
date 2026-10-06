@@ -1,0 +1,707 @@
+{
+  "id": "escala-lanss",
+  "implementationVersion": "escala-lanss@native-2026-10-05+b3fb6bef5d60",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "Sensibilidade ao toque e sensação de calor: 4 pontos (negativo)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Mecanismo neuropático improvável (< 12 pontos)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "A dor provavelmente é nociceptiva; reavalie se o quadro mudar.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Limite: sensação estranha, pele alterada e crises: 12 pontos (positivo)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Provável dor de mecanismo neuropático (≥ 12 pontos)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Considere tratamento dirigido à dor neuropática e investigue a lesão ou doença do sistema somatossensitivo.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Agulhadas, hipersensibilidade e alodinia: 13 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Provável dor de mecanismo neuropático (≥ 12 pontos)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Considere tratamento dirigido à dor neuropática e investigue a lesão ou doença do sistema somatossensitivo.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Todos os itens: 24 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Provável dor de mecanismo neuropático (≥ 12 pontos)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Considere tratamento dirigido à dor neuropática e investigue a lesão ou doença do sistema somatossensitivo.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "Sensibilidade ao toque e sensação de calor: 4 pontos (negativo)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Neuropathic mechanism unlikely (< 12 points)",
+            "locale": "en",
+            "template": "documented-authored-25ce6fe7579daed85205"
+          },
+          "note": {
+            "text": "The pain is probably nociceptive; reassess if the condition changes.",
+            "locale": "en",
+            "template": "documented-authored-4e8d370f65a15b278572"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Limite: sensação estranha, pele alterada e crises: 12 pontos (positivo)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Probable neuropathic pain mechanism (≥ 12 points)",
+            "locale": "en",
+            "template": "documented-authored-238c4a55e5d80be21f24"
+          },
+          "note": {
+            "text": "Consider targeted treatment for neuropathic pain and investigate injury or disease of the somatosensory system.",
+            "locale": "en",
+            "template": "documented-authored-9d51304218cacb6fc913"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Agulhadas, hipersensibilidade e alodinia: 13 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Probable neuropathic pain mechanism (≥ 12 points)",
+            "locale": "en",
+            "template": "documented-authored-238c4a55e5d80be21f24"
+          },
+          "note": {
+            "text": "Consider targeted treatment for neuropathic pain and investigate injury or disease of the somatosensory system.",
+            "locale": "en",
+            "template": "documented-authored-9d51304218cacb6fc913"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Todos os itens: 24 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Probable neuropathic pain mechanism (≥ 12 points)",
+            "locale": "en",
+            "template": "documented-authored-238c4a55e5d80be21f24"
+          },
+          "note": {
+            "text": "Consider targeted treatment for neuropathic pain and investigate injury or disease of the somatosensory system.",
+            "locale": "en",
+            "template": "documented-authored-9d51304218cacb6fc913"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "Sensibilidade ao toque e sensação de calor: 4 pontos (negativo)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Mecanismo neuropático poco probable (< 12 puntos)",
+            "locale": "es",
+            "template": "documented-authored-25ce6fe7579daed85205"
+          },
+          "note": {
+            "text": "El dolor probablemente es nociceptivo; reevalúe si el cuadro cambia.",
+            "locale": "es",
+            "template": "documented-authored-4e8d370f65a15b278572"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Limite: sensação estranha, pele alterada e crises: 12 pontos (positivo)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Probable dolor de mecanismo neuropático (≥ 12 puntos)",
+            "locale": "es",
+            "template": "documented-authored-238c4a55e5d80be21f24"
+          },
+          "note": {
+            "text": "Considere un tratamiento dirigido al dolor neuropático e investigue la lesión o enfermedad del sistema somatosensitivo.",
+            "locale": "es",
+            "template": "documented-authored-9d51304218cacb6fc913"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Agulhadas, hipersensibilidade e alodinia: 13 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Probable dolor de mecanismo neuropático (≥ 12 puntos)",
+            "locale": "es",
+            "template": "documented-authored-238c4a55e5d80be21f24"
+          },
+          "note": {
+            "text": "Considere un tratamiento dirigido al dolor neuropático e investigue la lesión o enfermedad del sistema somatosensitivo.",
+            "locale": "es",
+            "template": "documented-authored-9d51304218cacb6fc913"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Todos os itens: 24 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Probable dolor de mecanismo neuropático (≥ 12 puntos)",
+            "locale": "es",
+            "template": "documented-authored-238c4a55e5d80be21f24"
+          },
+          "note": {
+            "text": "Considere un tratamiento dirigido al dolor neuropático e investigue la lesión o enfermedad del sistema somatosensitivo.",
+            "locale": "es",
+            "template": "documented-authored-9d51304218cacb6fc913"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "Sensibilidade ao toque e sensação de calor: 4 pontos (negativo)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Mécanisme neuropathique improbable (< 12 points)",
+            "locale": "fr",
+            "template": "documented-authored-25ce6fe7579daed85205"
+          },
+          "note": {
+            "text": "La douleur est probablement nociceptive ; réévaluez si le tableau change.",
+            "locale": "fr",
+            "template": "documented-authored-4e8d370f65a15b278572"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Limite: sensação estranha, pele alterada e crises: 12 pontos (positivo)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Douleur probable de mécanisme neuropathique (≥ 12 points)",
+            "locale": "fr",
+            "template": "documented-authored-238c4a55e5d80be21f24"
+          },
+          "note": {
+            "text": "Envisagez un traitement ciblé de la douleur neuropathique et recherchez une lésion ou une maladie du système somatosensoriel.",
+            "locale": "fr",
+            "template": "documented-authored-9d51304218cacb6fc913"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Agulhadas, hipersensibilidade e alodinia: 13 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Douleur probable de mécanisme neuropathique (≥ 12 points)",
+            "locale": "fr",
+            "template": "documented-authored-238c4a55e5d80be21f24"
+          },
+          "note": {
+            "text": "Envisagez un traitement ciblé de la douleur neuropathique et recherchez une lésion ou une maladie du système somatosensoriel.",
+            "locale": "fr",
+            "template": "documented-authored-9d51304218cacb6fc913"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Todos os itens: 24 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Douleur probable de mécanisme neuropathique (≥ 12 points)",
+            "locale": "fr",
+            "template": "documented-authored-238c4a55e5d80be21f24"
+          },
+          "note": {
+            "text": "Envisagez un traitement ciblé de la douleur neuropathique et recherchez une lésion ou une maladie du système somatosensoriel.",
+            "locale": "fr",
+            "template": "documented-authored-9d51304218cacb6fc913"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "Sensibilidade ao toque e sensação de calor: 4 pontos (negativo)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Neuropathischer Mechanismus unwahrscheinlich (< 12 Punkte)",
+            "locale": "de",
+            "template": "documented-authored-25ce6fe7579daed85205"
+          },
+          "note": {
+            "text": "Der Schmerz ist wahrscheinlich nozizeptiv; bei Änderung des klinischen Bildes erneut beurteilen.",
+            "locale": "de",
+            "template": "documented-authored-4e8d370f65a15b278572"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Limite: sensação estranha, pele alterada e crises: 12 pontos (positivo)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Wahrscheinlicher neuropathischer Schmerzmechanismus (≥ 12 Punkte)",
+            "locale": "de",
+            "template": "documented-authored-238c4a55e5d80be21f24"
+          },
+          "note": {
+            "text": "Erwägen Sie eine gezielte Behandlung neuropathischer Schmerzen und untersuchen Sie eine Verletzung oder Erkrankung des somatosensorischen Systems.",
+            "locale": "de",
+            "template": "documented-authored-9d51304218cacb6fc913"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Agulhadas, hipersensibilidade e alodinia: 13 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Wahrscheinlicher neuropathischer Schmerzmechanismus (≥ 12 Punkte)",
+            "locale": "de",
+            "template": "documented-authored-238c4a55e5d80be21f24"
+          },
+          "note": {
+            "text": "Erwägen Sie eine gezielte Behandlung neuropathischer Schmerzen und untersuchen Sie eine Verletzung oder Erkrankung des somatosensorischen Systems.",
+            "locale": "de",
+            "template": "documented-authored-9d51304218cacb6fc913"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Todos os itens: 24 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Wahrscheinlicher neuropathischer Schmerzmechanismus (≥ 12 Punkte)",
+            "locale": "de",
+            "template": "documented-authored-238c4a55e5d80be21f24"
+          },
+          "note": {
+            "text": "Erwägen Sie eine gezielte Behandlung neuropathischer Schmerzen und untersuchen Sie eine Verletzung oder Erkrankung des somatosensorischen Systems.",
+            "locale": "de",
+            "template": "documented-authored-9d51304218cacb6fc913"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "Sensibilidade ao toque e sensação de calor: 4 pontos (negativo)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Meccanismo neuropatico improbabile (< 12 punti)",
+            "locale": "it",
+            "template": "documented-authored-25ce6fe7579daed85205"
+          },
+          "note": {
+            "text": "Il dolore è probabilmente nocicettivo; rivalutare se il quadro cambia.",
+            "locale": "it",
+            "template": "documented-authored-4e8d370f65a15b278572"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Limite: sensação estranha, pele alterada e crises: 12 pontos (positivo)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Probabile dolore a meccanismo neuropatico (≥ 12 punti)",
+            "locale": "it",
+            "template": "documented-authored-238c4a55e5d80be21f24"
+          },
+          "note": {
+            "text": "Considerare un trattamento mirato del dolore neuropatico e indagare la lesione o la malattia del sistema somatosensoriale.",
+            "locale": "it",
+            "template": "documented-authored-9d51304218cacb6fc913"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Agulhadas, hipersensibilidade e alodinia: 13 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Probabile dolore a meccanismo neuropatico (≥ 12 punti)",
+            "locale": "it",
+            "template": "documented-authored-238c4a55e5d80be21f24"
+          },
+          "note": {
+            "text": "Considerare un trattamento mirato del dolore neuropatico e indagare la lesione o la malattia del sistema somatosensoriale.",
+            "locale": "it",
+            "template": "documented-authored-9d51304218cacb6fc913"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Todos os itens: 24 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Probabile dolore a meccanismo neuropatico (≥ 12 punti)",
+            "locale": "it",
+            "template": "documented-authored-238c4a55e5d80be21f24"
+          },
+          "note": {
+            "text": "Considerare un trattamento mirato del dolore neuropatico e indagare la lesione o la malattia del sistema somatosensoriale.",
+            "locale": "it",
+            "template": "documented-authored-9d51304218cacb6fc913"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "Sensibilidade ao toque e sensação de calor: 4 pontos (negativo)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "آلية ألم عصبي غير مرجحة (< 12 نقطة)",
+            "locale": "ar",
+            "template": "documented-authored-25ce6fe7579daed85205"
+          },
+          "note": {
+            "text": "الألم على الأرجح نوسيبتيفي؛ أعد التقييم إذا تغيرت الحالة.",
+            "locale": "ar",
+            "template": "documented-authored-4e8d370f65a15b278572"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Limite: sensação estranha, pele alterada e crises: 12 pontos (positivo)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "ألم يُحتمل أن تكون آليته عصبية (≥ 12 نقطة)",
+            "locale": "ar",
+            "template": "documented-authored-238c4a55e5d80be21f24"
+          },
+          "note": {
+            "text": "ضع في الحسبان علاجًا موجهًا للألم العصبي وابحث عن أذية أو مرض في الجهاز الجسدي الحسي.",
+            "locale": "ar",
+            "template": "documented-authored-9d51304218cacb6fc913"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Agulhadas, hipersensibilidade e alodinia: 13 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "ألم يُحتمل أن تكون آليته عصبية (≥ 12 نقطة)",
+            "locale": "ar",
+            "template": "documented-authored-238c4a55e5d80be21f24"
+          },
+          "note": {
+            "text": "ضع في الحسبان علاجًا موجهًا للألم العصبي وابحث عن أذية أو مرض في الجهاز الجسدي الحسي.",
+            "locale": "ar",
+            "template": "documented-authored-9d51304218cacb6fc913"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Todos os itens: 24 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "ألم يُحتمل أن تكون آليته عصبية (≥ 12 نقطة)",
+            "locale": "ar",
+            "template": "documented-authored-238c4a55e5d80be21f24"
+          },
+          "note": {
+            "text": "ضع في الحسبان علاجًا موجهًا للألم العصبي وابحث عن أذية أو مرض في الجهاز الجسدي الحسي.",
+            "locale": "ar",
+            "template": "documented-authored-9d51304218cacb6fc913"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "Sensibilidade ao toque e sensação de calor: 4 pontos (negativo)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "神经病理性机制不太可能（< 12 分）",
+            "locale": "zh",
+            "template": "documented-authored-25ce6fe7579daed85205"
+          },
+          "note": {
+            "text": "疼痛可能为伤害感受性；如情况变化，请重新评估。",
+            "locale": "zh",
+            "template": "documented-authored-4e8d370f65a15b278572"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Limite: sensação estranha, pele alterada e crises: 12 pontos (positivo)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "可能为神经病理性疼痛机制（≥ 12 分）",
+            "locale": "zh",
+            "template": "documented-authored-238c4a55e5d80be21f24"
+          },
+          "note": {
+            "text": "考虑针对神经病理性疼痛的治疗，并调查躯体感觉系统的损伤或疾病。",
+            "locale": "zh",
+            "template": "documented-authored-9d51304218cacb6fc913"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Agulhadas, hipersensibilidade e alodinia: 13 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "可能为神经病理性疼痛机制（≥ 12 分）",
+            "locale": "zh",
+            "template": "documented-authored-238c4a55e5d80be21f24"
+          },
+          "note": {
+            "text": "考虑针对神经病理性疼痛的治疗，并调查躯体感觉系统的损伤或疾病。",
+            "locale": "zh",
+            "template": "documented-authored-9d51304218cacb6fc913"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Todos os itens: 24 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "可能为神经病理性疼痛机制（≥ 12 分）",
+            "locale": "zh",
+            "template": "documented-authored-238c4a55e5d80be21f24"
+          },
+          "note": {
+            "text": "考虑针对神经病理性疼痛的治疗，并调查躯体感觉系统的损伤或疾病。",
+            "locale": "zh",
+            "template": "documented-authored-9d51304218cacb6fc913"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "Sensibilidade ao toque e sensação de calor: 4 pontos (negativo)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "神経障害性機序は考えにくい（< 12点）",
+            "locale": "ja",
+            "template": "documented-authored-25ce6fe7579daed85205"
+          },
+          "note": {
+            "text": "痛みはおそらく侵害受容性である。状態が変化した場合は再評価する。",
+            "locale": "ja",
+            "template": "documented-authored-4e8d370f65a15b278572"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Limite: sensação estranha, pele alterada e crises: 12 pontos (positivo)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "神経障害性機序の可能性が高い痛み（≥ 12点）",
+            "locale": "ja",
+            "template": "documented-authored-238c4a55e5d80be21f24"
+          },
+          "note": {
+            "text": "神経障害性疼痛に対する標的治療を考慮し、体性感覚系の損傷または疾患を調べてください。",
+            "locale": "ja",
+            "template": "documented-authored-9d51304218cacb6fc913"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Agulhadas, hipersensibilidade e alodinia: 13 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "神経障害性機序の可能性が高い痛み（≥ 12点）",
+            "locale": "ja",
+            "template": "documented-authored-238c4a55e5d80be21f24"
+          },
+          "note": {
+            "text": "神経障害性疼痛に対する標的治療を考慮し、体性感覚系の損傷または疾患を調べてください。",
+            "locale": "ja",
+            "template": "documented-authored-9d51304218cacb6fc913"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Todos os itens: 24 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "神経障害性機序の可能性が高い痛み（≥ 12点）",
+            "locale": "ja",
+            "template": "documented-authored-238c4a55e5d80be21f24"
+          },
+          "note": {
+            "text": "神経障害性疼痛に対する標的治療を考慮し、体性感覚系の損傷または疾患を調べてください。",
+            "locale": "ja",
+            "template": "documented-authored-9d51304218cacb6fc913"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "Sensibilidade ao toque e sensação de calor: 4 pontos (negativo)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "न्यूरोपैथिक तंत्र की संभावना कम है (< 12 अंक)",
+            "locale": "hi",
+            "template": "documented-authored-25ce6fe7579daed85205"
+          },
+          "note": {
+            "text": "दर्द संभवतः नॉसिसेप्टिव है; यदि स्थिति बदलती है तो पुनर्मूल्यांकन करें।",
+            "locale": "hi",
+            "template": "documented-authored-4e8d370f65a15b278572"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Limite: sensação estranha, pele alterada e crises: 12 pontos (positivo)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "संभावित न्यूरोपैथिक दर्द तंत्र (≥ 12 अंक)",
+            "locale": "hi",
+            "template": "documented-authored-238c4a55e5d80be21f24"
+          },
+          "note": {
+            "text": "न्यूरोपैथिक दर्द के लिए लक्षित उपचार पर विचार करें और सोमाटोसेंसरी तंत्र की चोट या रोग की जाँच करें.",
+            "locale": "hi",
+            "template": "documented-authored-9d51304218cacb6fc913"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Agulhadas, hipersensibilidade e alodinia: 13 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "संभावित न्यूरोपैथिक दर्द तंत्र (≥ 12 अंक)",
+            "locale": "hi",
+            "template": "documented-authored-238c4a55e5d80be21f24"
+          },
+          "note": {
+            "text": "न्यूरोपैथिक दर्द के लिए लक्षित उपचार पर विचार करें और सोमाटोसेंसरी तंत्र की चोट या रोग की जाँच करें.",
+            "locale": "hi",
+            "template": "documented-authored-9d51304218cacb6fc913"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Todos os itens: 24 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "संभावित न्यूरोपैथिक दर्द तंत्र (≥ 12 अंक)",
+            "locale": "hi",
+            "template": "documented-authored-238c4a55e5d80be21f24"
+          },
+          "note": {
+            "text": "न्यूरोपैथिक दर्द के लिए लक्षित उपचार पर विचार करें और सोमाटोसेंसरी तंत्र की चोट या रोग की जाँच करें.",
+            "locale": "hi",
+            "template": "documented-authored-9d51304218cacb6fc913"
+          },
+          "level": "high"
+        }
+      }
+    ]
+  }
+}

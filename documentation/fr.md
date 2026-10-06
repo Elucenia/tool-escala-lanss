@@ -81,3 +81,35 @@ Résultat de la formule ou de la classification. L’interprétation, la conduit
 Apache-2.0 s’applique uniquement au code d’ELUCENIA. Les droits sur les instruments, publications, traductions et données restent ceux de leurs titulaires respectifs. Conservez LICENSE et NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Résultats documentés
+
+Les informations ci-dessous conservent les sorties de la méthode pour des exemples synthétiques. Elles ne constituent pas une validation clinique indépendante.
+
+### 1
+
+Mécanisme neuropathique improbable (< 12 points)
+
+La douleur est probablement nociceptive ; réévaluez si le tableau change.
+
+
+### 2
+
+Douleur probable de mécanisme neuropathique (≥ 12 points)
+
+Envisagez un traitement ciblé de la douleur neuropathique et recherchez une lésion ou une maladie du système somatosensoriel.
+
+
+### 3
+
+Douleur probable de mécanisme neuropathique (≥ 12 points)
+
+Envisagez un traitement ciblé de la douleur neuropathique et recherchez une lésion ou une maladie du système somatosensoriel.
+
+
+### 4
+
+Douleur probable de mécanisme neuropathique (≥ 12 points)
+
+Envisagez un traitement ciblé de la douleur neuropathique et recherchez une lésion ou une maladie du système somatosensoriel.
+
